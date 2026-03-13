@@ -7,95 +7,76 @@ window.__APP_LOADED__ = true;
  * KONFIGURASJON / KONSTANTER
  ******************************************************/
 
-const SUPABASE_URL = "https://sfqeyhowtxlavjlxyxdg.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNmcWV5aG93dHhsYXZqbHh5eGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzMDUyNjcsImV4cCI6MjA4Mzg4MTI2N30.95lGAZRymlKdWKBadymEKyWZ6r-n_xIMHMepIXtgVMI";
+const SUPABASE_URL = window.APP_CONFIG?.SUPABASE_URL;
+const SUPABASE_ANON_KEY = window.APP_CONFIG?.SUPABASE_ANON_KEY;
 const sbClient =
   (window.supabase && window.supabase.createClient)
     ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
     : null;
 
-const START_CENTER = [58.15, 8.0];   // Agder (Kristiansand)
+const START_CENTER = [58.15, 8.0];
 const START_ZOOM = 11;
-const RADIUS_METERS = 5000;          // Radius for filtrering
-
+const RADIUS_METERS = 10000;
 
 /******************************************************
  * KARTOPPSETT
  ******************************************************/
 
-// Synkroniser radius-etikett i panelet med konstanten
 const radiusLabelEl = document.getElementById("radiusLabel");
 if (radiusLabelEl) radiusLabelEl.textContent = RADIUS_METERS.toLocaleString("nb-NO");
 
-// 1️⃣ Opprett kart
 const map = L.map("map").setView(START_CENTER, START_ZOOM);
 
-// Basiskart (OpenStreetMap)
 const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "&copy; OpenStreetMap"
 }).addTo(map);
 
-// Layer control
 const baseLayers = { "OpenStreetMap": osm };
 const overlays = {};
 const layerControl = L.control.layers(baseLayers, overlays).addTo(map);
 
-// Fjellskygge / hillshade (OGC WMS overlay)
 const fjellskygge = L.tileLayer.wms("https://wms.geonorge.no/skwms1/wms.fjellskygge", {
   layers: "fjellskygge",
   format: "image/png",
   transparent: true,
-  opacity: 0.35,          // juster 0.2–0.6 etter smak
+  opacity: 0.55,
   attribution: "Kartverket / GeoNorge"
 });
-
-// Legg i layer control (av/på)
 layerControl.addOverlay(fjellskygge, "Terrengskygge (Fjellskygge WMS)");
-
-// Valgfritt: slå på som default
 fjellskygge.addTo(map);
 fjellskygge.bringToFront();
 
-
-
-// Eksternt OGC-lag (Kartverket WMS)
-const kartverketWms = L.tileLayer.wms(
-  "https://wms.geonorge.no/skwms1/wms.topo4",
-  {
-    layers: "topo4_WMS",
-    format: "image/png",
-    transparent: true,
-    attribution: "Kartverket / GeoNorge"
-  }
-);
-
+const kartverketWms = L.tileLayer.wms("https://wms.geonorge.no/skwms1/wms.topo4", {
+  layers: "topo4_WMS",
+  format: "image/png",
+  transparent: true,
+  attribution: "Kartverket / GeoNorge"
+});
 layerControl.addOverlay(kartverketWms, "Kartverket WMS (Topo4)");
 kartverketWms.addTo(map);
-
 
 /******************************************************
  * STYLING OG HJELPEFUNKSJONER
  ******************************************************/
 
-// Kategoriser etter antall plasser
 function categoryFromPlasser(plasser) {
   if (plasser < 100) return "Små";
   if (plasser <= 300) return "Middels";
   return "Store";
 }
 
-// Stil for alle tilfluktsrom (grå bakgrunnslag)
 function styleAll() {
   return { radius: 4, color: "#666", fillColor: "#666", weight: 1, fillOpacity: 0.25 };
 }
 
-// Stil for filtrerte tilfluktsrom
 function styleFromPlasser(plasser) {
-  if (plasser < 100)
+  if (plasser < 100) {
     return { radius: 5, color: "#2c7bb6", fillColor: "#2c7bb6", fillOpacity: 0.8 };
-  if (plasser <= 300)
+  }
+  if (plasser <= 300) {
     return { radius: 7, color: "#fdae61", fillColor: "#fdae61", fillOpacity: 0.8 };
+  }
   return { radius: 9, color: "#d7191c", fillColor: "#d7191c", fillOpacity: 0.8 };
 }
 
@@ -171,6 +152,30 @@ function nearestFeatureFrom(latlng, features) {
   return best;
 }
 
+function addTooltipAndHover(layer, tooltipText, growBy = 2) {
+  const baseRadius = layer.options?.radius;
+
+  if (tooltipText) {
+    layer.bindTooltip(tooltipText, {
+      direction: "top",
+      offset: [0, -6],
+      opacity: 0.95
+    });
+  }
+
+  layer.on({
+    mouseover: function () {
+      if (typeof baseRadius === "number" && this.setStyle) {
+        this.setStyle({ radius: baseRadius + growBy });
+      }
+    },
+    mouseout: function () {
+      if (typeof baseRadius === "number" && this.setStyle) {
+        this.setStyle({ radius: baseRadius });
+      }
+    }
+  });
+}
 
 /******************************************************
  * GLOBALE VARIABLER
@@ -186,23 +191,32 @@ let emergencyAllFeatures = [];
 let primarySchoolFeatures = [];
 let highSchoolFeatures = [];
 
-// Filtrert lag fra DB (innen radius)
-const filteredLayer = L.geoJSON(null, {
+/******************************************************
+ * LAG
+ ******************************************************/
+
+const shelterDbFilteredLayer = L.geoJSON(null, {
   pointToLayer: (feature, latlng) => {
     const plasser = Number(feature?.properties?.plasser);
     return L.circleMarker(latlng, styleFromPlasser(plasser));
   },
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
+
     layer.bindPopup(`
       <b>Tilfluktsrom (DB-resultat)</b><br>
       Adresse: ${p.adresse ?? "(mangler)"}<br>
       Plasser: ${p.plasser ?? "?"}<br>
-      
+      Romnr: ${p.romnr ?? "?"}
     `);
+
+    addTooltipAndHover(
+      layer,
+      `${p.adresse ?? "Tilfluktsrom"} (${p.plasser ?? "?"} plasser)`
+    );
   }
 });
-layerControl.addOverlay(filteredLayer, "Tilfluktsrom (innen radius) – DB");
+layerControl.addOverlay(shelterDbFilteredLayer, "Tilfluktsrom (innen radius) – DB");
 
 const emergencyLayer_police_station = L.geoJSON(null, {
   pointToLayer: (feature, latlng) => {
@@ -211,12 +225,18 @@ const emergencyLayer_police_station = L.geoJSON(null, {
   },
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
+
     layer.bindPopup(`
       <b>${emergencyLabel(p.type)}</b><br>
       Navn: ${p.name ?? "(mangler)"}<br>
       Kommune/by: ${p.municipality ?? "?"}<br>
       Telefon: ${p.phone ?? "?"}
     `);
+
+    addTooltipAndHover(
+      layer,
+      `${emergencyLabel(p.type)}: ${p.name ?? "Ukjent navn"}`
+    );
   }
 });
 layerControl.addOverlay(emergencyLayer_police_station, "Beredskap (Politi)");
@@ -228,16 +248,21 @@ const emergencyLayer_hospital = L.geoJSON(null, {
   },
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
+
     layer.bindPopup(`
       <b>${emergencyLabel(p.type)}</b><br>
       Navn: ${p.name ?? "(mangler)"}<br>
       Kommune/by: ${p.municipality ?? "?"}<br>
       Telefon: ${p.phone ?? "?"}
     `);
+
+    addTooltipAndHover(
+      layer,
+      `${emergencyLabel(p.type)}: ${p.name ?? "Ukjent navn"}`
+    );
   }
 });
 layerControl.addOverlay(emergencyLayer_hospital, "Beredskap (Sykehus)");
-
 
 const emergencyLayer_fire_station = L.geoJSON(null, {
   pointToLayer: (feature, latlng) => {
@@ -246,12 +271,18 @@ const emergencyLayer_fire_station = L.geoJSON(null, {
   },
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
+
     layer.bindPopup(`
       <b>${emergencyLabel(p.type)}</b><br>
       Navn: ${p.name ?? "(mangler)"}<br>
       Kommune/by: ${p.municipality ?? "?"}<br>
       Telefon: ${p.phone ?? "?"}
     `);
+
+    addTooltipAndHover(
+      layer,
+      `${emergencyLabel(p.type)}: ${p.name ?? "Ukjent navn"}`
+    );
   }
 });
 layerControl.addOverlay(emergencyLayer_fire_station, "Beredskap (Brannstasjon)");
@@ -263,25 +294,24 @@ const emergencyFilteredLayer = L.geoJSON(null, {
   },
   onEachFeature: (feature, layer) => {
     const p = feature.properties || {};
+
     layer.bindPopup(`
       <b>${emergencyLabel(p.type)} (innen radius)</b><br>
       Navn: ${p.name ?? "(mangler)"}<br>
       Kommune/by: ${p.municipality ?? "?"}<br>
       Telefon: ${p.phone ?? "?"}
     `);
+
+    addTooltipAndHover(
+      layer,
+      `${emergencyLabel(p.type)}: ${p.name ?? "Ukjent navn"}`
+    );
   }
 });
 layerControl.addOverlay(emergencyFilteredLayer, "Beredskap (innen radius)");
 
-
 /******************************************************
- * DATAFLYT:
- * 1) Hent GeoJSON (statisk fil)
- * 2) Tegn alle tilfluktsrom
- * 3) Ved klikk:
- *      - Filtrer innen radius
- *      - Finn nærmeste
- *      - Oppdater UI
+ * DATA: TILFLUKTSROM (STATISK)
  ******************************************************/
 
 fetch("data/Offentlige_Tilfluktsrom.geojson")
@@ -290,18 +320,22 @@ fetch("data/Offentlige_Tilfluktsrom.geojson")
     return r.json();
   })
   .then((data) => {
-    // Vis alle tilfluktsrom (statiske) som et bakgrunnslag
     const allLayer = L.geoJSON(data, {
       pointToLayer: (feature, latlng) => L.circleMarker(latlng, styleAll()),
       onEachFeature: (feature, layer) => {
         const p = feature.properties || {};
         const kategori = categoryFromPlasser(Number(p.plasser));
+
         layer.bindPopup(`
           <b>Tilfluktsrom (${kategori})</b><br>
           Adresse: ${p.adresse ?? "(mangler)"}<br>
           Plasser: ${p.plasser ?? "?"}<br>
-          
         `);
+
+        addTooltipAndHover(
+          layer,
+          `${p.adresse ?? "Tilfluktsrom"} (${p.plasser ?? "?"} plasser)`
+        );
       }
     });
 
@@ -314,21 +348,32 @@ fetch("data/Offentlige_Tilfluktsrom.geojson")
   .catch((err) => console.error("Feil ved lasting av GeoJSON:", err));
 
 /******************************************************
- * GRUNNSKOLER
+ * DATA: GRUNNSKOLER
  ******************************************************/
+
 fetch("data/Grunnskoler.geojson")
-  .then((r) => { if (!r.ok) throw new Error("HTTP error " + r.status); return r.json(); })
+  .then((r) => {
+    if (!r.ok) throw new Error("HTTP error " + r.status);
+    return r.json();
+  })
   .then((data) => {
     primarySchoolFeatures = (data.features || []).filter((f) => {
-  const c = f?.geometry?.coordinates;
-  return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
-});
+      const c = f?.geometry?.coordinates;
+      return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
+    });
 
     const grunnskoleLayer = L.geoJSON(data, {
       pointToLayer: (feature, latlng) =>
-        L.circleMarker(latlng, { radius: 5, color: "#1a7e40", fillColor: "#1a7e40", weight: 1, fillOpacity: 0.7 }),
+        L.circleMarker(latlng, {
+          radius: 5,
+          color: "#1a7e40",
+          fillColor: "#1a7e40",
+          weight: 1,
+          fillOpacity: 0.7
+        }),
       onEachFeature: (feature, layer) => {
         const p = feature.properties || {};
+
         layer.bindPopup(`
           <b>Grunnskole</b><br>
           Navn: ${p.skolenavn ?? "(mangler)"}<br>
@@ -336,18 +381,28 @@ fetch("data/Grunnskoler.geojson")
           Elever: ${p.antallelever ?? "?"} &nbsp;|&nbsp; Ansatte: ${p.antallansatte ?? "?"}<br>
           Eierforhold: ${p.eierforhold ?? "?"}
         `);
+
+        addTooltipAndHover(
+          layer,
+          `${p.skolenavn ?? "Ukjent grunnskole"}`
+        );
       }
     });
+
     layerControl.addOverlay(grunnskoleLayer, "Grunnskoler");
     console.log("Grunnskoler lastet:", data.features?.length ?? 0);
   })
   .catch((err) => console.error("Feil ved lasting av Grunnskoler:", err));
 
 /******************************************************
- * VIDEREGÅENDE SKOLER
+ * DATA: VIDEREGÅENDE SKOLER
  ******************************************************/
+
 fetch("data/Videregaendeskoler.geojson")
-  .then((r) => { if (!r.ok) throw new Error("HTTP error " + r.status); return r.json(); })
+  .then((r) => {
+    if (!r.ok) throw new Error("HTTP error " + r.status);
+    return r.json();
+  })
   .then((data) => {
     highSchoolFeatures = (data.features || []).filter((f) => {
       const c = f?.geometry?.coordinates;
@@ -356,9 +411,16 @@ fetch("data/Videregaendeskoler.geojson")
 
     const vgsLayer = L.geoJSON(data, {
       pointToLayer: (feature, latlng) =>
-        L.circleMarker(latlng, { radius: 6, color: "#8e44ad", fillColor: "#8e44ad", weight: 1, fillOpacity: 0.7 }),
+        L.circleMarker(latlng, {
+          radius: 6,
+          color: "#8e44ad",
+          fillColor: "#8e44ad",
+          weight: 1,
+          fillOpacity: 0.7
+        }),
       onEachFeature: (feature, layer) => {
         const p = feature.properties || {};
+
         layer.bindPopup(`
           <b>Videregående skole</b><br>
           Navn: ${p.skolenavn ?? "(mangler)"}<br>
@@ -366,18 +428,28 @@ fetch("data/Videregaendeskoler.geojson")
           Elever: ${p.antallelever ?? "?"} &nbsp;|&nbsp; Ansatte: ${p.antallansatte ?? "?"}<br>
           Eierforhold: ${p.eierforhold ?? "?"}
         `);
+
+        addTooltipAndHover(
+          layer,
+          `${p.skolenavn ?? "Ukjent videregående skole"}`
+        );
       }
     });
+
     layerControl.addOverlay(vgsLayer, "Videregående skoler");
     console.log("Videregående skoler lastet:", data.features?.length ?? 0);
   })
   .catch((err) => console.error("Feil ved lasting av Videregaendeskoler:", err));
 
 /******************************************************
- * SIVILFORSVARSDISTRIKTER
+ * DATA: SIVILFORSVARSDISTRIKTER
  ******************************************************/
+
 fetch("data/Sivilforsvarsdistrikter.geojson")
-  .then((r) => { if (!r.ok) throw new Error("HTTP error " + r.status); return r.json(); })
+  .then((r) => {
+    if (!r.ok) throw new Error("HTTP error " + r.status);
+    return r.json();
+  })
   .then((data) => {
     const sivilLayer = L.geoJSON(data, {
       style: () => ({ color: "#c0392b", weight: 2, fillColor: "#e74c3c", fillOpacity: 0.08 }),
@@ -390,14 +462,16 @@ fetch("data/Sivilforsvarsdistrikter.geojson")
         `);
       }
     });
+
     layerControl.addOverlay(sivilLayer, "Sivilforsvarsdistrikter");
     console.log("Sivilforsvarsdistrikter lastet:", data.features?.length ?? 0);
   })
   .catch((err) => console.error("Feil ved lasting av Sivilforsvarsdistrikter:", err));
 
 /******************************************************
- * BEREDSKAPSRESSURSER (OVERPASS)
+ * DATA: BEREDSKAPSRESSURSER
  ******************************************************/
+
 Promise.all([
   fetch("data/emergency_resources_police.geojson").then((r) => {
     if (!r.ok) throw new Error("HTTP error " + r.status + " (police)");
@@ -413,63 +487,56 @@ Promise.all([
   })
 ])
   .then((datasets) => {
-    const allFeatures = datasets.flatMap((d) => Array.isArray(d?.features) ? d.features : []);
-    emergencyAllFeatures = allFeatures.filter((f) => {
+    const policeFeatures = (datasets[0]?.features || []).filter((f) => {
       const c = f?.geometry?.coordinates;
       return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
     });
 
-const policeFeatures = (datasets[0]?.features || []).filter((f) => {
-  const c = f?.geometry?.coordinates;
-  return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
-});
+    const fireFeatures = (datasets[1]?.features || []).filter((f) => {
+      const c = f?.geometry?.coordinates;
+      return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
+    });
 
-const fireFeatures = (datasets[1]?.features || []).filter((f) => {
-  const c = f?.geometry?.coordinates;
-  return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
-});
+    const hospitalFeatures = (datasets[2]?.features || []).filter((f) => {
+      const c = f?.geometry?.coordinates;
+      return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
+    });
 
-const hospitalFeatures = (datasets[2]?.features || []).filter((f) => {
-  const c = f?.geometry?.coordinates;
-  return Array.isArray(c) && c.length >= 2 && Number.isFinite(c[0]) && Number.isFinite(c[1]);
-});
+    emergencyAllFeatures = [...policeFeatures, ...fireFeatures, ...hospitalFeatures];
 
-emergencyAllFeatures = [...policeFeatures, ...fireFeatures, ...hospitalFeatures];
+    emergencyLayer_police_station.addData({
+      type: "FeatureCollection",
+      features: policeFeatures
+    }).addTo(map);
 
-emergencyLayer_police_station.addData({
-  type: "FeatureCollection",
-  features: policeFeatures
-}).addTo(map);
+    emergencyLayer_fire_station.addData({
+      type: "FeatureCollection",
+      features: fireFeatures
+    }).addTo(map);
 
-emergencyLayer_fire_station.addData({
-  type: "FeatureCollection",
-  features: fireFeatures
-}).addTo(map);
+    emergencyLayer_hospital.addData({
+      type: "FeatureCollection",
+      features: hospitalFeatures
+    }).addTo(map);
 
-emergencyLayer_hospital.addData({
-  type: "FeatureCollection",
-  features: hospitalFeatures
-}).addTo(map);
     console.log("Beredskapsressurser lastet:", emergencyAllFeatures.length);
   })
   .catch((err) => console.error("Feil ved lasting av splitte emergency-filer:", err));
 
-    /******************************************************
- * KLIKK: SPATIAL SQL VIA SUPABASE (radius + nearest)
+/******************************************************
+ * KLIKK: SPATIAL SQL VIA SUPABASE
  ******************************************************/
+
 map.on("click", async (e) => {
   const lon = e.latlng.lng;
   const lat = e.latlng.lat;
 
-  // Vis radius-sirkel
   if (filterCircle) map.removeLayer(filterCircle);
   filterCircle = L.circle(e.latlng, { radius: RADIUS_METERS }).addTo(map);
 
-  // Marker klikkpunkt
   if (clickMarker) map.removeLayer(clickMarker);
   clickMarker = L.circleMarker(e.latlng, { radius: 6, weight: 2 }).addTo(map);
 
-  // --- 0) Emergency resources: innen radius (lokal GeoJSON) ---
   const emergencyWithin = emergencyAllFeatures.filter((f) => {
     const coords = f?.geometry?.coordinates;
     if (!Array.isArray(coords) || coords.length < 2) return false;
@@ -480,10 +547,17 @@ map.on("click", async (e) => {
   emergencyFilteredLayer.clearLayers();
   emergencyFilteredLayer.addData({ type: "FeatureCollection", features: emergencyWithin }).addTo(map);
 
-  // --- 0b) Narmeste emergency resource ---
   const nearestEmergency = nearestEmergencyFrom(e.latlng);
-  if (nearestEmergencyMarker) map.removeLayer(nearestEmergencyMarker);
-  if (nearestEmergencyLine) map.removeLayer(nearestEmergencyLine);
+
+  if (nearestEmergencyMarker) {
+    map.removeLayer(nearestEmergencyMarker);
+    nearestEmergencyMarker = null;
+  }
+  if (nearestEmergencyLine) {
+    map.removeLayer(nearestEmergencyLine);
+    nearestEmergencyLine = null;
+  }
+
   if (nearestEmergency) {
     const emergencyType = nearestEmergency.feature?.properties?.type;
     nearestEmergencyMarker = L.circleMarker(nearestEmergency.latlng, styleEmergency(emergencyType, true)).addTo(map);
@@ -495,15 +569,15 @@ map.on("click", async (e) => {
   }
 
   const nearestPrimarySchool = nearestFeatureFrom(e.latlng, primarySchoolFeatures);
-const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
+  const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
 
-  // --- A) DB: innen radius ---
   let withinFC = {
     type: "FeatureCollection",
     features: []
   };
 
-  filteredLayer.clearLayers();
+  shelterDbFilteredLayer.clearLayers();
+
   if (sbClient) {
     const { data: withinRows, error: withinErr } = await sbClient.rpc("api_within_radius", {
       lon,
@@ -520,6 +594,7 @@ const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
           type: "Feature",
           properties: {
             lokalId: r.lokalid ?? r.lokalId,
+            romnr: r.romnr,
             plasser: r.plasser,
             adresse: r.adresse,
             objtype: r.objtype
@@ -527,13 +602,13 @@ const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
           geometry: { type: "Point", coordinates: [r.lon_out, r.lat_out] }
         }))
       };
-      filteredLayer.addData(withinFC).addTo(map);
+
+      shelterDbFilteredLayer.addData(withinFC).addTo(map);
     }
   } else {
     console.warn("Supabase ikke lastet – tilfluktsrom-filter fra DB er deaktivert.");
   }
 
-  // Resultatliste (panel)
   const resultsDiv = document.getElementById("resultsList");
   if (resultsDiv) {
     if (withinFC.features.length === 0 && emergencyWithin.length === 0) {
@@ -562,8 +637,17 @@ const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
     }
   }
 
-  // --- B) DB: nærmeste tilfluktsrom ---
+  if (nearestMarker) {
+    map.removeLayer(nearestMarker);
+    nearestMarker = null;
+  }
+  if (nearestLine) {
+    map.removeLayer(nearestLine);
+    nearestLine = null;
+  }
+
   let nearestShelter = null;
+
   if (sbClient) {
     const { data: nearestRows, error: nearestErr } = await sbClient.rpc("api_nearest", { lon, lat });
 
@@ -571,41 +655,47 @@ const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
       console.error("api_nearest error:", nearestErr);
     } else {
       nearestShelter = nearestRows?.[0] ?? null;
+
       if (nearestShelter) {
         const nearestLatLng = L.latLng(nearestShelter.lat_out, nearestShelter.lon_out);
 
-        // Marker nærmeste + linje
-        if (nearestMarker) map.removeLayer(nearestMarker);
-        nearestMarker = L.circleMarker(nearestLatLng, { radius: 8, weight: 2 }).addTo(map);
+        nearestMarker = L.circleMarker(nearestLatLng, {
+          radius: 8,
+          weight: 2,
+          color: "#111",
+          fillColor: "#ffd54f",
+          fillOpacity: 0.95
+        }).addTo(map);
 
-        if (nearestLine) map.removeLayer(nearestLine);
-        nearestLine = L.polyline([e.latlng, nearestLatLng], { weight: 3 }).addTo(map);
+        nearestLine = L.polyline([e.latlng, nearestLatLng], {
+          weight: 3,
+          color: "#111",
+          dashArray: "6 4"
+        }).addTo(map);
       }
     }
   }
 
-  // Oppdater nearest panel (tilfluktsrom + emergency)
   const nearestText = document.getElementById("nearestText");
   if (nearestText) {
-
     const primaryschoolHtml = nearestPrimarySchool
-  ? `
-    <b>Nærmeste grunnskole</b><br>
-    Avstand: <b>${Math.round(nearestPrimarySchool.distanceMeters / 1000)} km</b><br>
-    Navn: <b>${nearestPrimarySchool.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
-    Adresse: ${nearestPrimarySchool.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestPrimarySchool.feature?.properties?.besoksadresse_poststed ?? ""}<br>
-    Antall elever: ${nearestPrimarySchool.feature?.properties?.antallelever ?? "?"}<br>
-    Antall ansatte: ${nearestPrimarySchool.feature?.properties?.antallansatte ?? "?"}
-  `
+      ? `
+        <b>Nærmeste grunnskole</b><br>
+        Avstand: <b>${(nearestPrimarySchool.distanceMeters / 1000).toFixed(1)} km</b><br>
+        Navn: <b>${nearestPrimarySchool.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
+        Adresse: ${nearestPrimarySchool.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestPrimarySchool.feature?.properties?.besoksadresse_poststed ?? ""}<br>
+        Antall elever: ${nearestPrimarySchool.feature?.properties?.antallelever ?? "?"}<br>
+        Antall ansatte: ${nearestPrimarySchool.feature?.properties?.antallansatte ?? "?"}
+      `
       : `
         <b>Nærmeste grunnskole</b><br>
-        <i>Ingen data (DB utilgjengelig eller ingen treff).</i>
+        <i>Ingen skoledata lastet eller ingen treff.</i>
       `;
-      
-      const highschoolHtml = nearestHighSchool
+
+    const highschoolHtml = nearestHighSchool
       ? `
         <b>Nærmeste videregående skole</b><br>
-        Avstand: <b>${Math.round(nearestHighSchool.distanceMeters / 1000)} km</b><br>
+        Avstand: <b>${(nearestHighSchool.distanceMeters / 1000).toFixed(1)} km</b><br>
         Navn: <b>${nearestHighSchool.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
         Adresse: ${nearestHighSchool.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestHighSchool.feature?.properties?.besoksadresse_poststed ?? ""}<br>
         Antall elever: ${nearestHighSchool.feature?.properties?.antallelever ?? "?"}<br>
@@ -613,33 +703,31 @@ const nearestHighSchool = nearestFeatureFrom(e.latlng, highSchoolFeatures);
       `
       : `
         <b>Nærmeste videregående skole</b><br>
-        <i>Ingen data (DB utilgjengelig eller ingen treff).</i>
+        <i>Ingen skoledata lastet eller ingen treff.</i>
       `;
-
 
     const shelterHtml = nearestShelter
       ? `
         <b>Nærmeste tilfluktsrom</b><br>
-        Avstand: <b>${Math.round(nearestShelter.avstand_m / 1000)} km</b><br>
+        Avstand: <b>${(nearestShelter.avstand_m / 1000).toFixed(1)} km</b><br>
         Adresse: <b>${nearestShelter.adresse ?? "(mangler)"}</b><br>
-        Plasser: ${nearestShelter.plasser ?? "?"}<br>
-        
+        Plasser: ${nearestShelter.plasser ?? "?"}
       `
       : `
         <b>Nærmeste tilfluktsrom</b><br>
-        <i>Ingen data (DB utilgjengelig eller ingen treff).</i>
+        <i>Ingen data fra database eller ingen treff.</i>
       `;
 
     const emergencyHtml = nearestEmergency
       ? `
         <b>Nærmeste beredskap</b><br>
         Type: <b>${emergencyLabel(nearestEmergency.feature?.properties?.type)}</b><br>
-        Avstand: <b>${Math.round(nearestEmergency.distanceMeters /1000)} km</b><br>
+        Avstand: <b>${(nearestEmergency.distanceMeters / 1000).toFixed(1)} km</b><br>
         Navn: ${nearestEmergency.feature?.properties?.name ?? "(mangler)"}
       `
       : `
         <b>Nærmeste beredskap</b><br>
-        <i>Ingen beredskapsdata lastet.</i>
+        <i>Ingen beredskapsdata lastet eller ingen treff.</i>
       `;
 
     nearestText.innerHTML = `${primaryschoolHtml}<hr>${highschoolHtml}<hr>${shelterHtml}<hr>${emergencyHtml}`;

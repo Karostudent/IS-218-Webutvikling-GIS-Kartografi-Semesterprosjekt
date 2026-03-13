@@ -84,3 +84,20 @@ html, body {
 .panel strong {
   font-weight: 600;
 }
+
+/* ---------- Tooltip ---------- */
+
+.leaflet-tooltip {
+  background: rgba(30, 30, 30, 0.92);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: rgba(30, 30, 30, 0.92);
+}
