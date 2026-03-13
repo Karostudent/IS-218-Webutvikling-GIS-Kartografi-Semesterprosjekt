@@ -11,44 +11,59 @@ html, body {
   width: 100vw;
 }
 
-/* ---------- Felles panel-stil ---------- */
+/* ---------- Panel-container ---------- */
 
-.panel {
+.panel-stack {
   position: absolute;
+  top: 320px;
   right: 12px;
   z-index: 1000;
 
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: stretch;
+
+  width: min(340px, calc(100vw - 24px));
+  max-height: calc(100vh - 340px);
+}
+
+/* ---------- Felles panel-stil ---------- */
+
+.panel {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(4px);
 
   padding: 14px 16px;
   border-radius: 10px;
 
-  max-width: 340px;
-  max-height: 45vh;
+  max-width: 100%;
+  max-height: 32vh;
   overflow: auto;
 
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
 
   font-size: 14px;
   line-height: 1.4;
+  box-sizing: border-box;
 }
 
-/* ---------- Plassering ---------- */
+/* ---------- Ikke bruk manuell top-plassering lenger ---------- */
 
-.panel-top {
-  top: 120px;
-}
-
+.panel-top,
 .panel-middle {
-  top: 320px;
+  position: static;
 }
 
 /* ---------- Tekst ---------- */
 
-.panel h3,
+.panel h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
 .panel b {
-  margin: 0 0 6px 0;
+  margin: 0;
 }
 
 .panel ul {

@@ -1,0 +1,2850 @@
+{
+  "type": "FeatureCollection",
+  "name": "hospital",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Olavs hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "72573000",
+        "source": "osm",
+        "osm_id": 33208978
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3866879,
+          63.4200085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sjukehuset Nordmøre og Romsdal Hjelset",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "70 10 50 00;71 12 00 00",
+        "source": "osm",
+        "osm_id": 191744245
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5134376,
+          62.7811659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blakstad sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 257641608
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4745484,
+          59.8213405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Levanger",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 308032881
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2900778,
+          63.741931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Troms Militære Sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 313954106
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3805128,
+          68.8532302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andebu legesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 536492687
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.18499,
+          59.3073236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Odda sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 582084510
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5497945,
+          60.058701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forusakutten",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 52 69 69 69",
+        "source": "osm",
+        "osm_id": 591104900
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.731062,
+          58.966577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nittedal legevakt",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 67 07 15 00",
+        "source": "osm",
+        "osm_id": 790028743
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8813,
+          60.043293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kysthospitalet i Hagavik",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 1236472340
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3948634,
+          60.1798369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åsgård sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1357438612
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9141615,
+          69.6593227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordlandssykehuset Lofoten",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1380945804
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5369534,
+          68.119711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kysthospitalet",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 1450595237
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0316206,
+          58.987022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tana Helsesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 1982603420
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1742252,
+          70.1989459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rønvik sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 2126289890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4365408,
+          67.2861596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sørlandet Sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 2580695395
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.665859,
+          58.2985339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eigersund poliklinikk",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 2591277915
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0178609,
+          58.4656002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herøy helsesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3095918950
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.288392,
+          65.981582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UNN avd. Åsgård",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3110908857
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.914325,
+          69.6591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edwin Ruuds hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3122773509
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.287253,
+          59.573098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3123837955
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.076634,
+          69.354304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BUPA intensiv poliklinikk",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3130189921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.420341,
+          59.271857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brystsenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 3130201429
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4188965,
+          59.2714876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helgelandssykehuset Sandnessjøen",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 3412237053
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6185946,
+          66.0182243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akuttsenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 33342000",
+        "source": "osm",
+        "osm_id": 3628512406
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4199129,
+          59.2723767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Telemark - seksjon for sykelig overvekt",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 5003683211
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.325391,
+          59.418963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volvat Ulriksdal",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 55 11 20 00",
+        "source": "osm",
+        "osm_id": 5306426765
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.360474,
+          60.377946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kongsgårdheimen",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5613219631
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0239951,
+          58.1595633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Telemark, Porsgrunn",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5679141255
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6553372,
+          59.1310574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trondheimsklinkken",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5844596585
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3899058,
+          63.4231866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Linde DPS",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5876018789
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.423061,
+          59.2555138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BUPA døgn",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5876030601
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4206598,
+          59.2716391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sola DPS",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "51515440",
+        "source": "osm",
+        "osm_id": 5898801726
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.654424,
+          58.887865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Psykose døgnpost, DPS Nord",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6091061158
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4238471,
+          59.2550573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barneavdelingen",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6091116537
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4201079,
+          59.2724806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ørje kursted",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6255745828
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6459944,
+          59.4745167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ØHD sengepost",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6258284233
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.397068,
+          59.2845959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halden sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 6263301637
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3759917,
+          59.1292222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forusakutten",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 52 69 69 69",
+        "source": "osm",
+        "osm_id": 6398497226
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.71735,
+          58.869663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kolsås sykehjem",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6465581071
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5079695,
+          59.9146667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eiksåsen sykehjem",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6465581368
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6116472,
+          59.9413361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "116 117",
+        "source": "osm",
+        "osm_id": 7621400893
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.791912,
+          59.939071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volvat",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 8112177561
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4496865,
+          61.1139681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ullevål Plastikkirurgi",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 8768396687
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.73517,
+          59.949933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Innlandet HF Brumunddal",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "91506200",
+        "source": "osm",
+        "osm_id": 9532261536
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9480292,
+          60.8831316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aleris sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 9975858558
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7408272,
+          58.9570562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vigør rehabiliteringssykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 10172244351
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.951274,
+          69.664834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordhordland Legevakt",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 10556673294
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2913126,
+          60.5463992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Legevakt - Emergency room entry",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 11746414873
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9848141,
+          69.6837098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Psykiatrisk sykehusavdeling",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 11992784078
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4208305,
+          59.2725543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nye UNN Narvik",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 12388471524
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.4652469,
+          68.4474196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mosseregionens legevakt",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "116 117",
+        "source": "osm",
+        "osm_id": 13159302471
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6970237,
+          59.446187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital bahagia",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 13527554058
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2264666,
+          60.2150814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ullevål sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 4617195
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7391512,
+          59.9390992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aker sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 4759187
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7937909,
+          59.9389747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Diakonhjemmet sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 5016059
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7047262,
+          59.9363146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haukeland Universitetssjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 25091625
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3574421,
+          60.3735734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universitetssykehuset Nord-Norge",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 25444602
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9826543,
+          69.6839341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sørlandet sykehus Kristiansand",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 906 10 600",
+        "source": "osm",
+        "osm_id": 36073467
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9820732,
+          58.1643882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 41780842
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0353555,
+          59.053262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunnås sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 43556465
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.640754,
+          59.8352396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akershus universitetssykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 67 96 00 00",
+        "source": "osm",
+        "osm_id": 51446838
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9949696,
+          59.9314479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gaustad sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 67413116
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7202879,
+          59.9502004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kysthospitalet",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 73995644
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0294251,
+          58.9881962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Administrasjon, Luftambulanse",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 87216980
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7347061,
+          58.9533458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambulansesentral Stavanger",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "ambulance_station",
+        "source": "osm",
+        "osm_id": 87441783
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7416185,
+          58.9505255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harstad sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 103088720
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.524761,
+          68.7962655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 103088732
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5236695,
+          68.7966845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Narvik sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 104733266
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.412922,
+          68.4420925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sanderud sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 113196372
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1601515,
+          60.7817175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bærum sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 115829770
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5111259,
+          59.8984043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Østmarka psykiatriske sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 118686854
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4522711,
+          63.4534436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ringerike Sykehus HF",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 120226616
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2554025,
+          60.1483559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Radiumhospitalet",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 143526382
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6625828,
+          59.9309528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stavanger Universitetssjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 152636077
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7346352,
+          58.9524066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Betanien hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 158120577
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.596223,
+          59.209222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Voss sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 170064294
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4203787,
+          60.6332149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Longyearbyen sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+4779024200",
+        "source": "osm",
+        "osm_id": 190025212
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6449229,
+          78.2200311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Telemark - Notodden",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 227968694
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2557055,
+          59.5663871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Østfold Kalnes",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 243593214
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0242768,
+          59.3183557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sørlandet Sykehus Arendal",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 254572865
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7553499,
+          58.4669645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordfjord sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 281771272
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.978261,
+          61.9160965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "B5 (Tromsø kommunale legevakt)",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 285978518
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.9845777,
+          69.6838735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vigør Rehabiliteringssykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 77 66 88 00",
+        "source": "osm",
+        "osm_id": 285982048
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.951258,
+          69.664876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ålesund sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 288109824
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3124475,
+          62.4640631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hospital - Больница",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 360063601
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2172669,
+          78.0615448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reinsvoll sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 386381518
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6454269,
+          60.6818958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 392954767
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3130736,
+          62.4641271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordlandssykehuset - Nordlánda s​kihp​​​pijviesso",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 396742652
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.396882,
+          67.2830443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stokmarknes sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 397959960
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.9102323,
+          68.5599874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Innlandet HF Elverum",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 397965575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5725393,
+          60.8767758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Namsos",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 397973286
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5048809,
+          64.4706211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Telemark, Skien",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 397975531
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5921148,
+          59.1922049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helgelandssykehuset Mo i Rana",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 401423370
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1857683,
+          66.3259811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hammerfest sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 401424367
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6715072,
+          70.673039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haugesund sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 401426859
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2791728,
+          59.4089424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lærdal sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+4757640000",
+        "source": "osm",
+        "osm_id": 450228100
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5190505,
+          61.102087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volda Sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 475113098
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.089968,
+          62.149295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 493473703
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2123559,
+          59.1339459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 533145524
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7776568,
+          62.2701416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tynset DPS",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 533145525
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.776114,
+          62.2696942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Olavs, avdeling Orkdal",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 545756272
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8453365,
+          63.2923807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mosjøen sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 597009281
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2123922,
+          65.8309286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kragerø sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 597045411
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4056233,
+          58.8793208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Innlandet HF Lillehammer",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "06200",
+        "source": "osm",
+        "osm_id": 625751300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4737814,
+          61.1124303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Innlandet HF Gjøvik",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 628554104
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6796497,
+          60.8031363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, DPS sør",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 648891127
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2365916,
+          59.1327589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kjelleparken",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 648893783
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3971443,
+          59.2848023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spesialsykehuset for epilepsi (SSE)",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 649207326
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.53787,
+          59.9063881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, Tønsberg",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 33342000",
+        "source": "osm",
+        "osm_id": 649207577
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.418873,
+          59.2722477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, DPS nord",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 649210218
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4242519,
+          59.2553231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sem bo- og servicesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 649327763
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3277119,
+          59.283462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, Larvik",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 668277250
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0354146,
+          59.0531791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, DPS sør",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 668281464
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.041187,
+          59.0505936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nøtterøy helsesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 668283278
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3968235,
+          59.2404296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset i Vestfold, Granli",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 669241148
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3040327,
+          59.2912197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smidsrød helsehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 669243228
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4247416,
+          59.238036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bjønnessåsen sykehjem",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 670301662
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4268629,
+          59.2145251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Østfold Moss",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 686455570
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6963341,
+          59.4472036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 751244264
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5547835,
+          61.0278031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Træleborg sykehjem",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 751406681
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4232462,
+          59.2653658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hjemmetjeneste sentral",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 751406682
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4237129,
+          59.2662718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martina Hansens hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 06780",
+        "source": "osm",
+        "osm_id": 769649008
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5078596,
+          59.8979236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alta helsesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 78 48 39 00",
+        "source": "osm",
+        "osm_id": 793790365
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2766283,
+          69.9683692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandnessjøen sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 868999187
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6185819,
+          66.0183325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandnessjøen sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 871453447
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.618002,
+          66.0182031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herøy helsesenter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 873265113
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2883049,
+          65.9815953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Legevakten i Oslo",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 879982478
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7917043,
+          59.9391908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 889953645
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3948522,
+          60.179797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glittreklinikken",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 67058000",
+        "source": "osm",
+        "osm_id": 890590320
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.878904,
+          60.1125135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 22932293",
+        "source": "osm",
+        "osm_id": 916400907
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7587602,
+          59.9166362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 919177654
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6739969,
+          59.3261915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Diakonhjemmet sykehus Vinderen",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 930991473
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7120834,
+          59.9417325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DPS Molde - Knausensenteret",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 945978281
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.2108882,
+          62.7435159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giske ambulansestasjon",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 949094628
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1179169,
+          62.5276306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stord sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 1005303958
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5126319,
+          59.7928442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lovisenberg Rehabilitering AS",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1007039773
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1653475,
+          60.1656815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Legevakten Oslo",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 22932293",
+        "source": "osm",
+        "osm_id": 1022645424
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7923735,
+          59.9392124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Akershus universitetssykehus Kongsvinger",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 91506200",
+        "source": "osm",
+        "osm_id": 1028188709
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9940171,
+          60.1945687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valen Sjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 1030389340
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7908642,
+          59.8299117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ReHabiliteringsklinikken",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 55 97 50 00",
+        "source": "osm",
+        "osm_id": 1046174045
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3216701,
+          60.3082322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hospital",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1060260621
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3692907,
+          59.8008401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Røros sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 72 82 33 00",
+        "source": "osm",
+        "osm_id": 1239480922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.37843,
+          62.5769591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Furukollen Psykiatriske Senter",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1288360281
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4970133,
+          60.1145719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sjukehuset Nordmøre og Romsdal Kristiansund",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "no",
+        "source": "osm",
+        "osm_id": 1299954584
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7243199,
+          63.1082713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drammen sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 1424797583
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2356164,
+          59.7424547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kongsberg sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 2170579
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6565555,
+          59.670434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haraldsplass diakonale sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 55978500",
+        "source": "osm",
+        "osm_id": 6185762
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3621863,
+          60.3789662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Førde sentralsjukehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 7078504
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8876875,
+          61.4567998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Betanien sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "+47 55 50 70 00",
+        "source": "osm",
+        "osm_id": 7750999
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2922197,
+          60.3632456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykehuset Innlandet Hamar",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 8384845
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0714403,
+          60.7982882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finnmarkssykehuset, Klinikk Alta",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 11058191
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2761063,
+          69.9688437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lovisenberg diakonale sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 12583871
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7457716,
+          59.9326006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ahus Gardermoen",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 13488098
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1641305,
+          60.165534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kirkenes sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "yes",
+        "source": "osm",
+        "osm_id": 13497453
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0349169,
+          69.7070253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hammerfest sykehus",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 13504208
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.652517,
+          70.6719905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bygg W",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 13602061
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4205225,
+          59.2718115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rikshospitalet",
+        "type": "hospital",
+        "municipality": "",
+        "phone": "02770",
+        "source": "osm",
+        "osm_id": 14086466
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7167732,
+          59.9477155
+        ]
+      }
+    }
+  ]
+}

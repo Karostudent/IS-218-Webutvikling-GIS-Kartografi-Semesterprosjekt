@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Webkart Oppgave 1</title>
+  <title>GIS-Kart – Tilfluktsrom, Skoler og Sivilforsvar</title>
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
@@ -11,18 +11,20 @@
 <body>
   <div id="map"></div>
 
-  <div id="nearestBox" class="panel panel-top">
-    <b>Nærmeste tilfluktsrom</b>
-    <div id="nearestText">Klikk i kartet for å beregne avstand.</div>
-  </div>
+  <div class="panel-stack">
+    <div id="nearestBox" class="panel">
+      
+      <div id="nearestText">Klikk i kartet for å beregne avstand til nærmeste skole, tilfluktsrom og beredskapsressurs.</div>
+    </div>
 
-  <div id="results" class="panel panel-middle">
-    <b>Tilfluktsrom innen radius:</b>
-    <div id="resultsList">Klikk i kartet for å søke.</div>
+    <div id="results" class="panel">
+      <b>Ressurser innen <span id="radiusLabel">5 000</span> m radius:</b>
+      <div id="resultsList">Klikk i kartet for å søke.</div>
+    </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
 </body>
 </html>

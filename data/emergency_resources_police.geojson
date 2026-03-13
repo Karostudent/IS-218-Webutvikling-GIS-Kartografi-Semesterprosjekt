@@ -1,0 +1,4470 @@
+{
+  "type": "FeatureCollection",
+  "name": "police_station",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordhordland lensmannsdistrikt",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56355670",
+        "source": "osm",
+        "osm_id": 30239461
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2886663,
+          60.5480296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 63944600",
+        "source": "osm",
+        "osm_id": 36486794
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.467579,
+          60.121004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fredrikstad politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 92740611
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9382249,
+          59.2148251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trondheim sentrum politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899090",
+        "source": "osm",
+        "osm_id": 177502958
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4043963,
+          63.4361493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grimstad politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38136000",
+        "source": "osm",
+        "osm_id": 198222172
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5969257,
+          58.3470053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lillestrøm politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 275316828
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0378756,
+          59.955073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åfjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 47463221",
+        "source": "osm",
+        "osm_id": 301435645
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2236738,
+          63.9610134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grenland politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 314074607
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5885445,
+          59.2022981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Askøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56152160",
+        "source": "osm",
+        "osm_id": 360948028
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1932372,
+          60.4275778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kongsvinger politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 410168167
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9981415,
+          60.1928359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mosjøen politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 440793578
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.1948736,
+          65.8398723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Værøy og Røst lensmannskontor - avdeling Værøy",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 440805229
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6934615,
+          67.6638651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nittedal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 67068470",
+        "source": "osm",
+        "osm_id": 443812878
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.881266,
+          60.0433811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Larvik politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 454640339
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0269043,
+          59.0519307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brumunddal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 482191462
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9403681,
+          60.883788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drammen politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 487130382
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.1962927,
+          59.7426181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gjøvik politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 495837033
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6919467,
+          60.7989516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steinkjer politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 74121000",
+        "source": "osm",
+        "osm_id": 498435383
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5011773,
+          64.0084188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smøla lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71543120",
+        "source": "osm",
+        "osm_id": 507112581
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0120021,
+          63.459638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fagernes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 544562263
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2374345,
+          60.9858399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 52865300",
+        "source": "osm",
+        "osm_id": 557255653
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4840523,
+          59.7740844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bodø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 564547439
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4018009,
+          67.2853062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mandal politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38136000",
+        "source": "osm",
+        "osm_id": 567049054
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4513696,
+          58.0254361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stange lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 619245214
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1908929,
+          60.7158307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lier lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32224040",
+        "source": "osm",
+        "osm_id": 623716439
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2447758,
+          59.7871666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Røyken og Hurum lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 31296600",
+        "source": "osm",
+        "osm_id": 661137006
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4129239,
+          59.7404114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Narvik politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 693599306
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.4255239,
+          68.4343961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Randaberg lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51412330",
+        "source": "osm",
+        "osm_id": 703490534
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6482567,
+          58.9918109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horten politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 772330842
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4846209,
+          59.4156102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nyrud politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 820168704
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.2428631,
+          69.1470969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stad lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57863480",
+        "source": "osm",
+        "osm_id": 836487426
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9886793,
+          61.905999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ålesund politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 844503072
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1398319,
+          62.4713384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Molde politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 848188634
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.16447,
+          62.73751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kvinnherad lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 53483800",
+        "source": "osm",
+        "osm_id": 982826289
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7620257,
+          59.8630311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grong lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 02800",
+        "source": "osm",
+        "osm_id": 1016667706
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3195324,
+          64.463612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sirdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38379800",
+        "source": "osm",
+        "osm_id": 1172105785
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7141627,
+          58.6687784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arendal og Froland politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38136000",
+        "source": "osm",
+        "osm_id": 1228115699
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7253483,
+          58.4605594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suldal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 52789898",
+        "source": "osm",
+        "osm_id": 1393894661
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2706989,
+          59.4816762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lom politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 1396351817
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5673456,
+          61.8370602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stjørdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899090",
+        "source": "osm",
+        "osm_id": 1565313790
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9221138,
+          63.4670187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Notodden politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 1584879545
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.252495,
+          59.5577406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Søre Ryfylke lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51743280",
+        "source": "osm",
+        "osm_id": 1606359960
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0379046,
+          59.0158804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hammerfest politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 1697472980
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6797803,
+          70.6632771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bardu lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 1733322052
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3540488,
+          68.85993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Egersund politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51899000",
+        "source": "osm",
+        "osm_id": 1778237647
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.9937825,
+          58.4494104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Voss politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56528700",
+        "source": "osm",
+        "osm_id": 1809796092
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4603847,
+          60.6347953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heimdal politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 72596220",
+        "source": "osm",
+        "osm_id": 1834028921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3547578,
+          63.3497452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tingvoll lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71531850",
+        "source": "osm",
+        "osm_id": 1887802574
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2050407,
+          62.9121033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Asker politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 1910696562
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4324511,
+          59.833674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lørenskog lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 67913800",
+        "source": "osm",
+        "osm_id": 1935513883
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9631821,
+          59.9275907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tana lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 1982604238
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.1812301,
+          70.2015203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herøy og Sande lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 2039808964
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6393428,
+          62.3266256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hemne og Snillfjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 99094070",
+        "source": "osm",
+        "osm_id": 2112489048
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.086562,
+          63.2921895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alta lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 2180077942
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.2708881,
+          69.9645545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rissa lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 47462070",
+        "source": "osm",
+        "osm_id": 2192184271
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9545025,
+          63.5826106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nore og Uvdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32742570",
+        "source": "osm",
+        "osm_id": 2299491225
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9455883,
+          60.267107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lillehammer politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 2320113422
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4619837,
+          61.1209363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vest-Lofoten lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 2388065892
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6019235,
+          68.1459553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karmøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 52865200",
+        "source": "osm",
+        "osm_id": 2491766787
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3064533,
+          59.2809902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valle og Bykle lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37936900",
+        "source": "osm",
+        "osm_id": 2515279803
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5318208,
+          59.2118617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vanylven lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 02800",
+        "source": "osm",
+        "osm_id": 2718918493
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5570326,
+          62.0995954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vennesla og Iveland lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38152850",
+        "source": "osm",
+        "osm_id": 2768665755
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9698343,
+          58.2700143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kvam lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56553500",
+        "source": "osm",
+        "osm_id": 2777091596
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1266796,
+          60.3693439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jæren lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51537850",
+        "source": "osm",
+        "osm_id": 2880385592
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.6528115,
+          58.7353211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tønsberg politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 2993955502
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4076524,
+          59.2690507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Modum lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32782960",
+        "source": "osm",
+        "osm_id": 3120224841
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.994148,
+          59.965673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bømlo lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 53448400",
+        "source": "osm",
+        "osm_id": 3121577459
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.173747,
+          59.7944282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eidsvoll og Hurdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 63969240",
+        "source": "osm",
+        "osm_id": 3123053669
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1738289,
+          60.2833894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elverum politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 3402702040
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5605937,
+          60.881899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guovdageainnu/Kautokeino lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 3633209069
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0417039,
+          69.0118275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stovner politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 3682978407
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9222713,
+          59.9613425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Florø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57758800",
+        "source": "osm",
+        "osm_id": 4500255934
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.0254258,
+          61.6005241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gran lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 4723990311
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5772531,
+          60.3505313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sogndal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57629181",
+        "source": "osm",
+        "osm_id": 4752331661
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1056525,
+          61.2318692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gardermoen politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64819500",
+        "source": "osm",
+        "osm_id": 5287433928
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1039614,
+          60.1902555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Røros lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 47979724",
+        "source": "osm",
+        "osm_id": 5415275359
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3865223,
+          62.5751931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Målselv lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5453565767
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5178983,
+          69.0663925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Statens barnehus Stavanger",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51510330",
+        "source": "osm",
+        "osm_id": 5503861777
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7383981,
+          58.9611424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Statens barnehus Kristiansand",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 99257161",
+        "source": "osm",
+        "osm_id": 5503861778
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9905755,
+          58.1452836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seksjon for utlendingsforvaltning, Oslo",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22342100",
+        "source": "osm",
+        "osm_id": 5503861779
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7594661,
+          59.9107234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vinje lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861781
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9893244,
+          59.5681977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seljord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861785
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.628084,
+          59.4835362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandefjord politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 5503861786
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2207636,
+          59.1295745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nissedal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861791
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5231528,
+          59.0190441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nes og Flå lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32072650",
+        "source": "osm",
+        "osm_id": 5503861792
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.101339,
+          60.5699171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kviteseid lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861793
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4872871,
+          59.4023732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holmestrand politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 5503861795
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3194615,
+          59.4863151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hol lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32095656",
+        "source": "osm",
+        "osm_id": 5503861796
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2059833,
+          60.5334102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midtre Hallingdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32029500",
+        "source": "osm",
+        "osm_id": 5503861798
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9510433,
+          60.7004432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drangedal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861801
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.062855,
+          59.0968042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midt-Telemark lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 5503861802
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.132706,
+          59.406432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bamble lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 5503861803
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6938709,
+          59.0458662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ullensaker lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 63929000",
+        "source": "osm",
+        "osm_id": 5503861805
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1710998,
+          60.1447118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halden politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 5503861808
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3891337,
+          59.1200137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aurskog-Høland lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 5503861811
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.571759,
+          59.8841491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Årdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57648780",
+        "source": "osm",
+        "osm_id": 5503861812
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7007234,
+          61.2358983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Måløy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57854970",
+        "source": "osm",
+        "osm_id": 5503861813
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1132742,
+          61.9346545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vik lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57698080",
+        "source": "osm",
+        "osm_id": 5503861814
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5815091,
+          61.0855255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Utlendingsseksjonen, Bergen",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55556300",
+        "source": "osm",
+        "osm_id": 5503861815
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3494572,
+          60.3115861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stryn lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57873680",
+        "source": "osm",
+        "osm_id": 5503861816
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.7191055,
+          61.9041084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Øygarden lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56315800",
+        "source": "osm",
+        "osm_id": 5503861817
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.1201869,
+          60.3641099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Osterøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56194500",
+        "source": "osm",
+        "osm_id": 5503861818
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4964829,
+          60.5249598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Masfjorden lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56163180",
+        "source": "osm",
+        "osm_id": 5503861820
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2630221,
+          60.8344713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lærdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57669900",
+        "source": "osm",
+        "osm_id": 5503861921
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4821439,
+          61.0985197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Høyanger lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57714570",
+        "source": "osm",
+        "osm_id": 5503861922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0727278,
+          61.2186264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hardanger lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 53651500",
+        "source": "osm",
+        "osm_id": 5503861923
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5459543,
+          60.0673836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gloppen lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57868620",
+        "source": "osm",
+        "osm_id": 5503861924
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2280342,
+          61.7687838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fusa lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56582000",
+        "source": "osm",
+        "osm_id": 5503861925
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7475122,
+          60.2399843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bremanger lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57796630",
+        "source": "osm",
+        "osm_id": 5503861927
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2907275,
+          61.768554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergen sør politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55919100",
+        "source": "osm",
+        "osm_id": 5503861928
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.349582,
+          60.3116207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergen nord politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55255500",
+        "source": "osm",
+        "osm_id": 5503861929
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3358556,
+          60.4679673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Austevoll lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 56181250",
+        "source": "osm",
+        "osm_id": 5503861930
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.223459,
+          60.093144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aurland lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57632630",
+        "source": "osm",
+        "osm_id": 5503861931
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1883759,
+          60.9055652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ørland lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 48866760",
+        "source": "osm",
+        "osm_id": 5503861933
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.6661038,
+          63.6856557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Levanger og Verdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899090",
+        "source": "osm",
+        "osm_id": 5503861935
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4829674,
+          63.7917571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trondheim lufthavn lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 48953272",
+        "source": "osm",
+        "osm_id": 5503861936
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9181889,
+          63.4543958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Selbu lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 99097225",
+        "source": "osm",
+        "osm_id": 5503861937
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0395451,
+          63.2179879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oppdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 72404830",
+        "source": "osm",
+        "osm_id": 5503861939
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.687565,
+          62.594964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nærøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899090",
+        "source": "osm",
+        "osm_id": 5503861940
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6059684,
+          64.8677888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Namsos politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 02800",
+        "source": "osm",
+        "osm_id": 5503861941
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.504655,
+          64.463847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midtre-Gauldal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 48944028",
+        "source": "osm",
+        "osm_id": 5503861942
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2928081,
+          63.0364766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lierne lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899090",
+        "source": "osm",
+        "osm_id": 5503861943
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5924959,
+          64.4641081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skjervøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861945
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.977177,
+          70.034596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordreisa og Kvænangen lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861947
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0257194,
+          69.7671708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lyngen lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861948
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2748382,
+          69.3882964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harstad politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861950
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5401729,
+          68.8006335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finnsnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861951
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9902621,
+          69.2291668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Balsfjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 5503861952
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.5699432,
+          69.2143468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stavanger lufthavn politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+4751843131",
+        "source": "osm",
+        "osm_id": 5503861953
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.629487,
+          58.8822062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sauda lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 52785577",
+        "source": "osm",
+        "osm_id": 5503861954
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.3482085,
+          59.6480259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lund lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51405560",
+        "source": "osm",
+        "osm_id": 5503861956
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.548504,
+          58.457185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Etne og Vindafjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 53766300",
+        "source": "osm",
+        "osm_id": 5503861957
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8103053,
+          59.6052722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Værøy og Røst lensmannskontor - avdeling Røst",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861959
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.1157348,
+          67.5172675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vega lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861960
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9654405,
+          65.6750307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Utlendingsenheten, Mosjøen",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 48887475",
+        "source": "osm",
+        "osm_id": 5503861961
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2329644,
+          65.8249657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tysfjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861962
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.376991,
+          68.0983627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sortland lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861964
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.4151666,
+          68.6936282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nesna lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861965
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0172732,
+          66.1991979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mo i Rana politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861966
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1258144,
+          66.314021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Herøy og Dønna lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2836543,
+          65.9803083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hemnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861971
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.6379086,
+          66.22673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Innhavet lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861972
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9240254,
+          67.9694145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grane og Hattfjelldal lensmannskontor - avdeling Hattfjelldal",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861973
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.9895203,
+          65.5976568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grane og Hattfjelldal lensmannskontor - avdeling Grane",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861974
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.385579,
+          65.5387759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fauske lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861975
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.398853,
+          67.2596566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861977
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1219358,
+          69.3204911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alstahaug og Leirfjord lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5503861978
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6355717,
+          66.0226782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Volda og Ørsta lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 5503861979
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0815723,
+          62.1791168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vestnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 5503861980
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.0924964,
+          62.6222755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulstein og Hareid lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 5503861981
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8546881,
+          62.3396591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sykkylven lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 5503861982
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.580841,
+          62.3923099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Surnadal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71657350",
+        "source": "osm",
+        "osm_id": 5503861983
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.727599,
+          62.973866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunndal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71657300",
+        "source": "osm",
+        "osm_id": 5503861984
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.565732,
+          62.6726628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stranda lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118700",
+        "source": "osm",
+        "osm_id": 5503861985
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.9440682,
+          62.3077804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Statens barnehus Ålesund",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 70118850",
+        "source": "osm",
+        "osm_id": 5503861986
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.158877,
+          62.47297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rauma lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71224760",
+        "source": "osm",
+        "osm_id": 5503861987
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6883547,
+          62.5687236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hustadvika lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71266712",
+        "source": "osm",
+        "osm_id": 5503861989
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1612841,
+          62.8538298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aure lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 71644000",
+        "source": "osm",
+        "osm_id": 5503861991
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5313766,
+          63.2678358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flisa lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503861992
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0201173,
+          60.6138163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rena lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503861993
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3722344,
+          61.1344422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vang lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503861996
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5706802,
+          61.1255534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tynset lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503861997
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7778309,
+          62.2734256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trysil lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503861998
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2628825,
+          61.3157678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koppang lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503862001
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0499154,
+          61.5703375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Statens barnehus Hamar",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62519260",
+        "source": "osm",
+        "osm_id": 5503862002
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0716424,
+          60.7940578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Otta lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503862003
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5356423,
+          61.7723078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dokka lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503862005
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.074253,
+          60.8351145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vinstra politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503862006
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7656968,
+          61.589533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dombås lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 5503862008
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1279816,
+          62.076053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vardø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862010
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1125141,
+          70.3740944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vadsø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862011
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.7473791,
+          70.0759233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Storskog grenseovergangssted",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862012
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.2041209,
+          69.658317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Porsanger lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862013
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9560492,
+          70.0521945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordkapp lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862014
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.9682761,
+          70.9813764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Måsøy lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862015
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6664178,
+          70.9960332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loppa lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3508684,
+          70.2405473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lebesby lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862017
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.3450611,
+          70.9459835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hasvik lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862018
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1606254,
+          70.4862491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gamvik lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862019
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.8321813,
+          71.0273937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Båtsfjord politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 5503862020
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.69758,
+          70.628188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åmli lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37185000",
+        "source": "osm",
+        "osm_id": 5503862221
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.4870536,
+          58.7701397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tvedestrand og Vegårshei lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37199000",
+        "source": "osm",
+        "osm_id": 5503862222
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9172554,
+          58.6272932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Søgne og Songdalen lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38054670",
+        "source": "osm",
+        "osm_id": 5503862223
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8558418,
+          58.1385268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lillesand og Birkenes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37268660",
+        "source": "osm",
+        "osm_id": 5503862224
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3764181,
+          58.2500444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flekkefjord og Kvinesdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 38325200",
+        "source": "osm",
+        "osm_id": 5503862225
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.659815,
+          58.2964401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bygland, Evje og Hornnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37929180",
+        "source": "osm",
+        "osm_id": 5503862226
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7990867,
+          58.5838311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Øksnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 5779781371
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.088396,
+          68.914813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fjaler lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 57739950",
+        "source": "osm",
+        "osm_id": 5923029579
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.404113,
+          61.36484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Evenes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 6561029740
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.6842032,
+          68.4921353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ørnes lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 6609211032
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.7074604,
+          66.8735905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7627569708
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9208835,
+          63.4545854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Byremo lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931841
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.4015872,
+          58.4211716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politiets publikumssenter - Ski",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931842
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8311102,
+          59.7142553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politiets forvaltningssenter - Haugesund",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931843
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2705543,
+          59.4125454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politiets publikumssenter - Grålum",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931844
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.0613285,
+          59.2959318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Farsund og Lyngdal politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931845
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.784485,
+          58.085873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Namsfogden i Bodø",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931846
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4017092,
+          67.2854444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sysselmannen",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931847
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.625664,
+          78.2226033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Namsfogden i Ålesund",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 7955931848
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1503162,
+          62.470806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Risør og Gjerstad lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 37149800",
+        "source": "osm",
+        "osm_id": 7955931849
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1754132,
+          58.7152105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haugesund politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 52868000",
+        "source": "osm",
+        "osm_id": 8385411326
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2762243,
+          59.4062062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brønnøysund politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 11023453253
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2423374,
+          65.4937015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tysnes politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 53438100",
+        "source": "osm",
+        "osm_id": 11515490026
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5230888,
+          60.0464179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salangen Politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77 97 60 00",
+        "source": "osm",
+        "osm_id": 11755403032
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.8356003,
+          68.8753857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 12635889590
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6619954,
+          59.8556162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lørenskog politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64 99 30 00",
+        "source": "osm",
+        "osm_id": 12806058750
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.954131,
+          59.9213959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "grensetjänsten",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 12850525199
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2400391,
+          59.9307151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 12997249728
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1005376,
+          60.1933625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nedre Eiker politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 13144217140
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0047552,
+          59.7523038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hovden Politipost",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 13537051851
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3557241,
+          59.5599376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bærum politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 41803735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.524468,
+          59.8862795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manglerud politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 68871112
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8130369,
+          59.896527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stavanger politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51899000",
+        "source": "osm",
+        "osm_id": 88142610
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.7364145,
+          58.963016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Politiets nasjonale beredskapssenter",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 98341521
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.838897,
+          59.8047991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hamar politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 62539000",
+        "source": "osm",
+        "osm_id": 109937942
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.09435,
+          60.79588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Majorstuen politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 116250421
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7071945,
+          59.932047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kongsberg politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32805500",
+        "source": "osm",
+        "osm_id": 119549707
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.646465,
+          59.6721675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kirkenes politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 130904948
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0421742,
+          69.7290219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandnes politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 51899000",
+        "source": "osm",
+        "osm_id": 154117163
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.73752,
+          58.847477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rjukan politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 188088553
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5895096,
+          59.8785963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarpsborg politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 189811646
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1115235,
+          59.2853745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rauma politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 192138890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6878413,
+          62.5576341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 203452668
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.401641,
+          67.285377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kragerø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 35906400",
+        "source": "osm",
+        "osm_id": 208302666
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4129295,
+          58.8726575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indre Østfold politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 275491950
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1731135,
+          59.580717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moss politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 318420905
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.6696881,
+          59.4358646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berlevåg lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 78972000",
+        "source": "osm",
+        "osm_id": 365006025
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.087933,
+          70.8550593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Svolvær politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 512416898
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5584145,
+          68.2286755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hønefoss politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 32103210",
+        "source": "osm",
+        "osm_id": 540376996
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.2530321,
+          60.1645154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grønland politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 557060199
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7711546,
+          59.9108929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergen vest politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55518500",
+        "source": "osm",
+        "osm_id": 576475455
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.2761965,
+          60.347655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lurøy og Træna lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 75589000",
+        "source": "osm",
+        "osm_id": 587592389
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.8284066,
+          66.3928015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orkdal lensmannskontor",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 73899300",
+        "source": "osm",
+        "osm_id": 666652138
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8507625,
+          63.3077755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tromsø politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 77796000",
+        "source": "osm",
+        "osm_id": 700743229
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.968485,
+          69.6601165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kristiansund politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 766508019
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.727772,
+          63.1081885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 879396446
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.4523527,
+          60.1825022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 931934540
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.5230559,
+          60.0464456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sentrum politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 22669050",
+        "source": "osm",
+        "osm_id": 947693574
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7508629,
+          59.9151706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trondheim sør politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 954067970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3576742,
+          63.3485125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Førde politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55 55 63 00",
+        "source": "osm",
+        "osm_id": 1315927492
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.8688317,
+          61.4496266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1385034813
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.1663882,
+          60.3016312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Øvre Eiker politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 33344400",
+        "source": "osm",
+        "osm_id": 1389047735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8995096,
+          59.7683616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1391032793
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.2386498,
+          59.9301829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1442495848
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.705417,
+          59.9121605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "police_station",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 1475614228
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9872534,
+          58.1462779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergen sentrum politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 55556300",
+        "source": "osm",
+        "osm_id": 2624518
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.329661,
+          60.392871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Follo politistasjon",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "+47 64993000",
+        "source": "osm",
+        "osm_id": 13168136
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8321183,
+          59.7155457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oslo politikammer - Hundetjenesten",
+        "type": "police_station",
+        "municipality": "",
+        "phone": "",
+        "source": "osm",
+        "osm_id": 18343843
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.8287581,
+          59.9280447
+        ]
+      }
+    }
+  ]
+}
