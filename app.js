@@ -62,6 +62,16 @@ const kartverketWms = L.tileLayer.wms("https://wms.geonorge.no/skwms1/wms.topo4"
 layerControl.addOverlay(kartverketWms, "Kartverket WMS (Topo4)");
 kartverketWms.addTo(map);
 
+// Egen pane for distriktsgrenser slik at de ligger under andre interaktive lag
+map.createPane("districtPane");
+map.getPane("districtPane").style.zIndex = 350;
+map.getPane("districtPane").style.pointerEvents = "none";
+
+// Egen pane for etiketter
+map.createPane("districtLabelPane");
+map.getPane("districtLabelPane").style.zIndex = 360;
+map.getPane("districtLabelPane").style.pointerEvents = "none";
+
 /******************************************************
  * STYLING OG HJELPEFUNKSJONER
  ******************************************************/
@@ -296,6 +306,7 @@ setTimeout(addLegendToLayerControl, 0);
 let grunnskoleLayer = null;
 let vgsLayer = null;
 let sivilLayer = null;
+let sivilLabelLayer = null;
 
 let filterCircle = null;
 let clickMarker = null;
@@ -690,23 +701,48 @@ fetch("data/Sivilforsvarsdistrikter_ny.geojson")
   })
   .then((data) => {
     sivilLayer = L.geoJSON(data, {
+      pane: "districtPane",
+      interactive: false,
       style: () => ({
         color: "#c0392b",
         weight: 2,
-        fillColor: "#e74c3c",
-        fillOpacity: 0.08
-      }),
-      onEachFeature: (feature, layer) => {
-        const p = feature.properties || {};
-        layer.bindPopup(`
-          <b>Sivilforsvarsdistrikt</b><br>
-          Navn: ${p.navn ?? "?"}<br>
-        `);
-      }
+        fill: false,
+        opacity: 0.9
+      })
     });
 
-    sivilLayer.addTo(map);
-    layerControl.addOverlay(sivilLayer, "Sivilforsvarsdistrikter");
+    sivilLabelLayer = L.layerGroup();
+
+    data.features?.forEach((feature) => {
+      const layer = L.geoJSON(feature);
+      const bounds = layer.getBounds();
+
+      if (!bounds.isValid()) return;
+
+      const center = bounds.getCenter();
+      const navn = feature?.properties?.navn ?? "?";
+
+      const labelMarker = L.marker(center, {
+        pane: "districtLabelPane",
+        interactive: false,
+        opacity: 0
+      }).bindTooltip(navn, {
+        permanent: true,
+        direction: "center",
+        className: "district-label"
+      });
+
+      sivilLabelLayer.addLayer(labelMarker);
+    });
+
+    const sivilCombinedLayer = L.layerGroup([sivilLayer, sivilLabelLayer]);
+    sivilCombinedLayer.addTo(map);
+
+    if (sivilLayer.bringToBack) {
+      sivilLayer.bringToBack();
+    }
+
+    layerControl.addOverlay(sivilCombinedLayer, "Sivilforsvarsdistrikter");
     console.log("Sivilforsvarsdistrikter lastet:", data.features?.length ?? 0);
   })
   .catch((err) => console.error("Feil ved lasting av Sivilforsvarsdistrikter:", err));
@@ -870,7 +906,7 @@ async function runSpatialAnalysis(latlng) {
         features: (withinRows || []).map((r) => ({
           type: "Feature",
           properties: {
-            lokalId: r.lokalid ?? r.lokalId,
+            lokalId: r.lokalid,
             romnr: r.romnr,
             plasser: r.plasser,
             adresse: r.adresse,

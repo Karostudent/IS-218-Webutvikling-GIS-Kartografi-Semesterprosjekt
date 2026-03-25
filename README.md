@@ -1,23 +1,58 @@
-# Webutvikling, GIS og kartografi – Prosjekt
+# Webutvikling, GIS og kartografi – Analyse av skoleberedskap i Norge
 
 ## TLDR
-Dette prosjektet undersøker beredskap for evakuering av skoleelever i Norge ved å kombinere webkart, romlig analyse og databasebaserte spørringer. Løsningen bruker offentlige tilfluktsrom, grunnskoler, videregående skoler og sivilforsvarsdistrikter for å analysere hvor godt skolene er geografisk dekket av tilfluktsrom. Webkartet er bygget i Leaflet, mens mer omfattende analyser er dokumentert i en Jupyter Notebook med GeoPandas, Pandas og Folium. Prosjektet viser både statisk visualisering og dynamisk spatial SQL via Supabase/PostGIS.
+Prosjektet analyserer geografisk beredskap for evakuering av skoleelever i Norge ved å kombinere interaktivt webkart, romlig database og GIS-analyse i notebook.  
+
+Ved hjelp av data om offentlige tilfluktsrom, grunnskoler, videregående skoler og sivilforsvarsdistrikter undersøkes:
+
+- avstand fra skoler til nærmeste tilfluktsrom  
+- andel skoler innen 5 km dekning  
+- variasjon i dekning mellom distrikter  
+- kapasitet i tilfluktsrom sammenlignet med elevtall  
+- geografiske områder med svak beredskap  
+
+Webkartet gir dynamisk analyse via Supabase/PostGIS, mens notebooken dokumenterer en mer omfattende GIScience-analyse.
+
+---
 
 ## Problemstilling
-Hvordan varierer beredskapen for evakuering av skoleelever mellom norske sivilforsvarsdistrikter, målt som avstand til nærmeste offentlige tilfluktsrom og andel skoler innen 5 km dekning?
+
+Hvordan varierer den geografiske beredskapen for evakuering av skoleelever mellom norske sivilforsvarsdistrikter, målt gjennom:
+
+- avstand til nærmeste offentlige tilfluktsrom  
+- andel skoler innen 5 km dekning  
+- forholdet mellom elevtall og tilgjengelige tilfluktsromsplasser  
+- identifikasjon av distrikter og områder med svak beredskap  
+
+---
 
 ## Demo
-Prosjektet består av to hoveddeler:
 
-- et interaktivt webkart med bakgrunnskart, temalag og dynamiske romlige spørringer
-- en notebook som dokumenterer analysearbeidsflyten steg for steg
+Prosjektet består av to hovedkomponenter:
+
+### Interaktivt webkart
+Gir brukeren mulighet til å:
+
+- slå av og på lag for skoler, tilfluktsrom, distrikter og beredskapsressurser  
+- klikke i kartet og få dynamisk analyse fra database  
+- visualisere nærmeste tilfluktsrom og objekter innen radius  
+- se analyseresultater direkte i kartet  
+
+### Notebook-analyse
+Dokumenterer hele GIS-arbeidsflyten:
+
+- reprojeksjon og datakontroll  
+- avstandsanalyse  
+- buffer og dekning  
+- overlay  
+- romlig aggregering per distrikt  
+- distriktsranking  
+- kapasitet vs elevanalyse  
+- kart over svake områder  
+
 ![Demo av webkartet](docs/Demo.gif)
-Ved lokal kjøring kan brukeren:
 
-- slå av og på lag for tilfluktsrom, grunnskoler, videregående skoler, sivilforsvarsdistrikter og beredskapsressurser
-- klikke i kartet og få opp nærmeste tilfluktsrom og objekter innen valgt radius
-- se visuell tilbakemelding i form av sirkel, markør, framheving og forbindelseslinjer
-- åpne notebooken og følge en full GIS-analyse av skoleberedskap
+---
 
 ## Prosjektstruktur
 
@@ -34,14 +69,14 @@ Ved lokal kjøring kan brukeren:
 │   ├── Grunnskoler.geojson
 │   ├── Videregaendeskoler.geojson
 │   ├── Sivilforsvarsdistrikter_ny.geojson
-│   └── emergency_resources.geojson
+│   ├── emergency_resources_police.geojson
+│   ├── emergency_resources_fire.geojson
+│   └── emergency_resources_hospital.geojson
 ├── outputs/
 │   ├── district_coverage_summary.csv
-│   └── dekning_kart.html
-└── scripts/
-    └── ...
+│   ├── dekning_kart.html
+│   └── svake_omrader_kart.html
 
----
 ```
 
 ## Teknisk stack
@@ -73,14 +108,60 @@ Ved lokal kjøring kan brukeren:
 ## Arkitektur
 Prosjektet kombinerer tre nivåer:
 
-### 1. Frontend
-Frontend består av en enkel webapplikasjon med Leaflet. Kartet viser lokale GeoJSON-lag og eksterne WMS-lag, og støtter layer control, popups, tooltips og klikkbasert analyse.
+### 1. Frontend (Leaflet)
+ - visualisering av GeoJSON og WMS
+ - layer control
+ - popup og tooltip
+ - klikkbasert analyse
 
-### 2. Data og database
-Utvalgte datasett lagres lokalt som GeoJSON. Tilfluktsrom er i tillegg importert til Supabase med PostGIS, slik at kartet kan kjøre dynamiske romlige spørringer mot databasen.
+### 2. Romlig database (Supabase/PostGIS)
+Tilfluktsrom er lagret i tabellen shelters.
+Kartet kaller SQL-funksjoner for å:
 
-### 3. Analyse
-Den mer omfattende analysen er gjennomført i Notebook_Oppgave2.ipynb med GeoPandas og Pandas. Her beregnes nærmeste avstand, bufferdekning, overlay og aggregerte resultater per sivilforsvarsdistrikt.
+ - finne nærmeste tilfluktsrom
+ - finne alle tilfluktsrom innen radius
+
+Dette demonstrerer dynamisk spatial SQL i webapplikasjon.
+
+### 3. GIS-analyse (Notebook)
+Notebooken bruker GeoPandas, Pandas og Folium til å analysere:
+
+ - avstand fra skoler til tilfluktsrom
+ - bufferdekning
+ - romlig overlay
+ - distriktsvis dekning
+ - ranking av distrikter
+ - kapasitetsanalyse
+ - kartlegging av svake områder
+
+## Viktigste analyser
+### Distriktsranking
+
+Sivilforsvarsdistrikter rangeres etter:
+
+ - andel skoler innen 5 km dekning
+ - gjennomsnittlig avstand til tilfluktsrom
+
+Dette synliggjør geografiske forskjeller i beredskap.
+
+### Kapasitet vs elevtall
+
+For hvert distrikt beregnes:
+
+ - totalt elevtall
+ - totale tilfluktsromsplasser
+ - dekningsgrad (%)
+
+Dette gir en indikasjon på hvor tilfluktsromkapasiteten er svakest.
+
+### Kart over svake områder
+
+Interaktive kart viser:
+
+ - skoler uten dekning
+ - distrikter med lav dekning
+
+Dette gjør analysens funn visuelt tydelige.
 
 
 # Oppgave 1 – Interaktivt webkart
@@ -215,28 +296,38 @@ $$;
 Notebooken finnes i prosjektet som:
 Notebook_Oppgave2.ipynb
 
+Den dokumenterer en sammenhengende GIS-analyse av geografisk beredskap for evakuering av skoleelever i Norge. Arbeidsflyten kombinerer dataklargjøring, romlige analyser og visualisering av resultater.
+
 Notebooken er strukturert slik:
+
 1. introduksjon og problemstilling
-2. import av biblioteker
-3. innlesing av data
-4. kontroll av datastruktur og koordinatsystem
-5. reprojeksjon
-6. innledende kartvisualisering
-7. avstandsanalyse til nærmeste tilfluktsrom
-8. bufferanalyse med 5 km dekning
-9. skoler med og uten dekning
-10. overlayanalyse
-11. romlig aggregering per sivilforsvarsdistrikt
-12. visualisering av resultater
-13. interaktivt Folium-kart
-14. rasterdel med GDAL-eksempler
-15. tolkning og konklusjon
+2. import av biblioteker og innlesing av geografiske datasett
+3. kontroll av datastruktur og koordinatsystem
+4. reprojeksjon til et felles koordinatsystem i meter
+5. innledende kartvisualisering av datasett
+6. beregning av avstand fra skoler til nærmeste offentlige tilfluktsrom
+7. bufferanalyse med 5 km dekning rundt tilfluktsrom
+8. identifikasjon av skoler med og uten dekning
+9. overlayanalyse mellom skoler og buffersoner
+10. romlig aggregering og beregning av dekning per sivilforsvarsdistrikt
+11. distriktsranking basert på dekning og gjennomsnittlig avstand
+12. kapasitetsanalyse som sammenligner totalt elevtall med tilgjengelige 
+13. tilfluktsromsplasser
+14. kartvisualisering av områder og distrikter med svak beredskap
+15. interaktive kart laget med Folium
+16. dokumentasjon av en enkel rasterarbeidsflyt med GDAL
+17. tolkning av resultater og refleksjon rundt begrensninger
+
+Notebooken fungerer både som analyseverktøy og som dokumentasjon av metodisk arbeidsflyt i GIScience.
 
 
 ## Viktigste funn
 
-Analysen viser at dekningen av offentlige tilfluktsrom ikke er jevnt fordelt. Noen sivilforsvarsdistrikter har høy andel skoler innen 5 km fra nærmeste tilfluktsrom, mens andre distrikter har svakere dekning og lengre gjennomsnittlig avstand.
-Dette tyder på at geografisk beredskap for skoleevakuering varierer regionalt, og at enkelte områder kan være mer sårbare enn andre.
+Analysen viser klare geografiske forskjeller i beredskap for evakuering av skoleelever. Andelen skoler innen 5 km fra nærmeste offentlige tilfluktsrom varierer betydelig mellom sivilforsvarsdistriktene, og kartvisualiseringer identifiserer flere områder med svak dekning.
+
+Distriktsranking og kapasitetsanalyse indikerer også at enkelte distrikter har et misforhold mellom elevtall og tilgjengelige tilfluktsromsplasser. Dette tyder på at beredskapen ikke bare påvirkes av avstand, men også av regional kapasitet og romlig fordeling av ressurser.
+
+Samlet peker resultatene på at beredskapen for skoleevakuering varierer regionalt, og at enkelte distrikter kan framstå som mer sårbare enn andre.
 
 
 ## Begrensninger
@@ -258,8 +349,8 @@ cd <repo-mappe>
 Prosjektet bruker Supabase for de dynamiske romlige spørringene. Kontroller at config.js inneholder gyldig URL og nøkkel.
 Eksempel:
 window.APP_CONFIG = {
- supabaseUrl: "DIN_SUPABASE_URL",
- supabaseAnonKey: "DIN_SUPABASE_ANON_KEY"
+ SUPABASE_URL: "DIN_SUPABASE_URL",
+ SUPABASE_ANON_KEY: "DIN_SUPABASE_ANON_KEY"
 };
 
 3. Start lokal server

@@ -201,3 +201,19 @@ html, body {
   border-radius: 50%;
   background: rgba(51, 136, 255, 0.15);
 }
+
+.district-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: #270303;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.district-label::before {
+  display: none;
+}
