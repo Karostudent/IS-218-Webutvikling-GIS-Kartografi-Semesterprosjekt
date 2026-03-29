@@ -4,6 +4,8 @@ Gruppe 2: Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karolin
 For denne oppgaven har vi valgt å opprette hver vår løsning slik at vi alle kan lære de ulike stegene i prosessen, lære av hverandre og forbedre våre egne versjoner og forståelser. Etter å ha presentert våre ulike løsninger for hverandre i et gruppemøte, ble vi enige om en felles besvarelse. Dette er grunnen til at ikke alle gruppemedlemmer nødvendigvis står som contributor i dette prosjektet. Vi har alle gjort jobben.
 
 
+
+
 # Webutvikling, GIS og kartografi – Analyse av skoleberedskap i Norge
 
 ## TLDR
@@ -67,9 +69,10 @@ Dokumenterer hele GIS-arbeidsflyten:
 ├── index.html
 ├── app.js
 ├── style.css
-├── config.js
+├── config.js (ikke inkludert i repo – se konfigurasjon)
 ├── README.md
 ├── Notebook_Oppgave2.ipynb
+
 ├── data/
 │   ├── Offentlige_Tilfluktsrom.geojson
 │   ├── Grunnskoler.geojson
@@ -77,11 +80,35 @@ Dokumenterer hele GIS-arbeidsflyten:
 │   ├── Sivilforsvarsdistrikter_ny.geojson
 │   ├── emergency_resources_police.geojson
 │   ├── emergency_resources_fire.geojson
-│   └── emergency_resources_hospital.geojson
-├── outputs/
+│   ├── emergency_resources_hospital.geojson
+│   └── dem_agder_merged_hillshade.tif (ikke inkludert – se README)
+
+├── database/
+│   ├── create_tables.sql
+│   ├── rpc_functions.sql
+│   └── import_notes.md
+
+├── scripts/
+│   └── overpass_data.py
+
+├── docs/
+│   └── Demo.gif
+
+├── outputs/  (genereres av notebook)
+│   ├── agder_aoi.geojson
+│   ├── dem_agder_clip.tif
+│   ├── slope_agder.tif
+│   ├── slope_gt_30_agder.tif
+│   ├── slope_gt_30_agder.geojson
 │   ├── district_coverage_summary.csv
 │   ├── dekning_kart.html
 │   └── svake_omrader_kart.html
+
+### Om datastruktur
+
+- `data/` inneholder statiske inngangsdata
+- `outputs/` genereres automatisk av notebooken
+- rasterfiler (.tif) er ikke inkludert i repoet på grunn av størrelse
 
 ```
 
@@ -128,6 +155,20 @@ Kartet kaller SQL-funksjoner for å:
  - finne alle tilfluktsrom innen radius
 
 Dette demonstrerer dynamisk spatial SQL i webapplikasjon.
+
+#### Supabase-konfigurasjon
+
+Av sikkerhetsgrunner er `config.js` ikke inkludert i repoet.
+
+For å teste den dynamiske funksjonaliteten:
+- Se vedlagt PDF i innleveringen for Supabase-tilkobling
+- Opprett en lokal `config.js` basert på disse verdiene
+
+Eksempel:
+window.APP_CONFIG = {
+  SUPABASE_URL: "...",
+  SUPABASE_ANON_KEY: "..."
+};
 
 ### 3. GIS-analyse (Notebook)
 Notebooken bruker GeoPandas, Pandas og Folium til å analysere:
