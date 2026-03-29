@@ -34,9 +34,7 @@ Hvordan varierer den geografiske beredskapen for evakuering av skoleelever mello
 
 ---
 
-## Demo
-
-Prosjektet består av to hovedkomponenter:
+## Prosjektet består av to hovedkomponenter:
 
 ### Interaktivt webkart
 Gir brukeren mulighet til å:
@@ -247,7 +245,7 @@ Når brukeren klikker i kartet:
 
 Dette gjør kartet til mer enn en ren visning; det fungerer også som et enkelt analyseverktøy.
 
-
+## Demo
 ![Demo av webkartet](docs/Demo.gif)
 
 
