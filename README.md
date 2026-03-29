@@ -1,4 +1,8 @@
 # IS-218 - Semesterprosjekt for Gruppe 2
+Gruppe 2: Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karoline Aas-Mehren, Milana Dubkova.
+
+For denne oppgaven har vi valgt å opprette hver vår løsning slik at vi alle kan lære de ulike stegene i prosessen, lære av hverandre og forbedre våre egne versjoner og forståelser. Etter å ha presentert våre ulike løsninger for hverandre i et gruppemøte, ble vi enige om en felles besvarelse. Dette er grunnen til at ikke alle gruppemedlemmer nødvendigvis står som contributor i dette prosjektet. Vi har alle gjort jobben.
+
 
 Gruppe 2: 
 Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karoline Aas-Mehren, Milana Dubkova.
@@ -17,7 +21,8 @@ Ved hjelp av data om offentlige tilfluktsrom, grunnskoler, videregående skoler 
 - andel skoler innen 5 km dekning  
 - variasjon i dekning mellom distrikter  
 - kapasitet i tilfluktsrom sammenlignet med elevtall  
-- geografiske områder med svak beredskap  
+- geografiske områder med svak beredskap
+- analyse av terreng (helning) som påvirker tilgjengelighet  
 
 Webkartet gir dynamisk analyse via Supabase/PostGIS, mens notebooken dokumenterer en mer omfattende GIScience-analyse.
 
@@ -57,8 +62,7 @@ Dokumenterer hele GIS-arbeidsflyten:
 - distriktsranking  
 - kapasitet vs elevanalyse  
 - kart over svake områder  
-
-![Demo av webkartet](docs/Demo.gif)
+- rasteranalyse (terreng og helning)
 
 ---
 
@@ -123,7 +127,7 @@ Prosjektet kombinerer tre nivåer:
  - klikkbasert analyse
 
 ### 2. Romlig database (Supabase/PostGIS)
-Tilfluktsrom er lagret i tabellen shelters.
+Tilfluktsrom er lagret i databasen som tabellen `shelters`.
 Kartet kaller SQL-funksjoner for å:
 
  - finne nærmeste tilfluktsrom
@@ -141,6 +145,7 @@ Notebooken bruker GeoPandas, Pandas og Folium til å analysere:
  - ranking av distrikter
  - kapasitetsanalyse
  - kartlegging av svake områder
+ - analyse av terreng (helning) som påvirker tilgjengelighet
 
 ## Viktigste analyser
 ### Distriktsranking
@@ -171,6 +176,14 @@ Interaktive kart viser:
 
 Dette gjør analysens funn visuelt tydelige.
 
+### Terrenganalyse (raster)
+
+Rasteranalysen bruker høydedata (DEM) for å undersøke hvordan terreng påvirker evakueringsmuligheter. Rasteranalysen baserer seg på DEM-data fra GeoNorge (ikke inkludert i repoet).
+
+Ved å beregne helning (slope) og identifisere områder med brattere terreng (>30°), analyseres hvorvidt skoler uten dekning også ligger i geografisk krevende områder.
+
+Denne analysen tilfører en viktig dimensjon til beredskapsvurderingen, ved å vise at tilgjengelighet ikke bare handler om avstand, men også om terrengforhold.
+
 
 # Oppgave 1 – Interaktivt webkart
 
@@ -199,6 +212,9 @@ Når brukeren klikker i kartet:
  - resultater presenteres i egne informasjonsfelt
 
 Dette gjør kartet til mer enn en ren visning; det fungerer også som et enkelt analyseverktøy.
+
+
+![Demo av webkartet](docs/Demo.gif)
 
 
 # Oppgave 2 – GIScience og romlig analyse
@@ -235,6 +251,7 @@ Webkartet er utvidet med dynamiske romlige spørringer via Supabase og PostGIS. 
 
 
 ## SQL-snippet brukt i Supabase / PostGIS
+Følgende SQL-funksjoner er lagret i Supabase og brukes av webkartet til å finne nærmeste tilfluktsrom og alle tilfluktsrom innen valgt radius. 
 
 ```sql
 -- Finn nærmeste tilfluktsrom
@@ -298,7 +315,6 @@ as $$
 $$;
 ```
 
--- 
 ## Notebook-guide
 
 Notebooken finnes i prosjektet som:
@@ -319,12 +335,16 @@ Notebooken er strukturert slik:
 9. overlayanalyse mellom skoler og buffersoner
 10. romlig aggregering og beregning av dekning per sivilforsvarsdistrikt
 11. distriktsranking basert på dekning og gjennomsnittlig avstand
-12. kapasitetsanalyse som sammenligner totalt elevtall med tilgjengelige 
-13. tilfluktsromsplasser
-14. kartvisualisering av områder og distrikter med svak beredskap
-15. interaktive kart laget med Folium
-16. dokumentasjon av en enkel rasterarbeidsflyt med GDAL
-17. tolkning av resultater og refleksjon rundt begrensninger
+12. kapasitetsanalyse som sammenligner totalt elevtall med tilgjengelige tilfluktsromsplasser
+13. kartvisualisering av områder og distrikter med svak beredskap
+14. interaktive kart laget med Folium
+15. rasteranalyse basert på høydedata (DEM)
+    - Rasteranalysen baserer seg på DEM-data fra GeoNorge (ikke inkludert i repoet)
+16. klipping av raster til studieområde (Agder)
+17. beregning av helning (slope)
+18. identifikasjon av bratt terreng (>30°)
+19. kobling mellom terreng og skoler uten dekning
+20. tolkning av resultater og refleksjon rundt begrensninger
 
 Notebooken fungerer både som analyseverktøy og som dokumentasjon av metodisk arbeidsflyt i GIScience.
 
@@ -344,7 +364,7 @@ Analysen har flere begrensninger:
  - den bruker luftlinjeavstand, ikke faktisk reisetid eller veinett
  - datasettet omfatter bare offentlige tilfluktsrom
  - analysen sier noe om geografisk nærhet, men ikke om kapasiteten er tilstrekkelig for alle elever
- - rasterdelen er dokumentert som arbeidsflyt, men ikke brukt som hovedgrunnlag for konklusjonene
+ - rasteranalysen gir indikasjoner på terrengmessige utfordringer, men er ikke koblet til faktisk transportnett eller framkommelighet i praksis
 
 
 ## Kjøring lokalt
@@ -361,16 +381,27 @@ window.APP_CONFIG = {
  SUPABASE_ANON_KEY: "DIN_SUPABASE_ANON_KEY"
 };
 
-3. Start lokal server
+3. Rasterdata (DEM)
+
+DEM-data er ikke inkludert i repoet på grunn av filstørrelse.
+
+For å kjøre rasteranalysen:
+- last ned høydedata (DEM) fra GeoNorge  
+- lagre filen som:  
+  data/dem_agder_merged_hillshade.tif  
+
+Notebooken vil da fungere som forventet.
+
+4. Start lokal server
 Det holder å bruke en enkel lokal webserver, for eksempel:
 npx live-server
 eller:
 python -m http.server 8080
 
-4. Åpne kartet i nettleser
+5. Åpne kartet i nettleser
 Åpne index.html via den lokale serveren.
 
-5. Åpne notebooken
+6. Åpne notebooken
 Start Jupyter og åpne:
 jupyter notebook
 Deretter åpner du Notebook_Oppgave2.ipynb.

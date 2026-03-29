@@ -84,9 +84,7 @@ function categoryFromPlasser(plasser) {
   return "Store";
 }
 
-function styleAll() {
-  return { radius: 4, color: "#666", fillColor: "#666", weight: 1, fillOpacity: 0.25 };
-}
+
 
 function styleFromPlasser(plasser) {
   const n = Number(plasser);
@@ -326,8 +324,8 @@ let vgsFeatures = [];
 function updateResultPanels(
   withinFC,
   emergencyWithin,
-  nearestPrimarySchool,
-  nearestHighSchool,
+  nearestGrunnskole,
+  nearestVgs,
   nearestShelter,
   nearestEmergency
 ) {
@@ -368,28 +366,28 @@ function updateResultPanels(
   const nearestText = document.getElementById("nearestText");
 
   if (nearestText) {
-    const grunnskoleHtml = nearestPrimarySchool
+    const grunnskoleHtml = nearestGrunnskole
       ? `
         <b>Nærmeste grunnskole</b><br>
-        Avstand: <b>${(nearestPrimarySchool.distanceMeters / 1000).toFixed(1)} km</b><br>
-        Navn: <b>${nearestPrimarySchool.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
-        Adresse: ${nearestPrimarySchool.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestPrimarySchool.feature?.properties?.besoksadresse_poststed ?? ""}<br>
-        Antall elever: ${nearestPrimarySchool.feature?.properties?.antallelever ?? "?"}<br>
-        Antall ansatte: ${nearestPrimarySchool.feature?.properties?.antallansatte ?? "?"}
+        Avstand: <b>${(nearestGrunnskole.distanceMeters / 1000).toFixed(1)} km</b><br>
+        Navn: <b>${nearestGrunnskole.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
+        Adresse: ${nearestGrunnskole.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestGrunnskole.feature?.properties?.besoksadresse_poststed ?? ""}<br>
+        Antall elever: ${nearestGrunnskole.feature?.properties?.antallelever ?? "?"}<br>
+        Antall ansatte: ${nearestGrunnskole.feature?.properties?.antallansatte ?? "?"}
       `
       : `
         <b>Nærmeste grunnskole</b><br>
         <i>Ingen skoledata lastet eller ingen treff.</i>
       `;
 
-    const vgsHtml = nearestHighSchool
+    const vgsHtml = nearestVgs
       ? `
         <b>Nærmeste videregående skole</b><br>
-        Avstand: <b>${(nearestHighSchool.distanceMeters / 1000).toFixed(1)} km</b><br>
-        Navn: <b>${nearestHighSchool.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
-        Adresse: ${nearestHighSchool.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestHighSchool.feature?.properties?.besoksadresse_poststed ?? ""}<br>
-        Antall elever: ${nearestHighSchool.feature?.properties?.antallelever ?? "?"}<br>
-        Antall ansatte: ${nearestHighSchool.feature?.properties?.antallansatte ?? "?"}
+        Avstand: <b>${(nearestVgs.distanceMeters / 1000).toFixed(1)} km</b><br>
+        Navn: <b>${nearestVgs.feature?.properties?.skolenavn ?? "(mangler)"}</b><br>
+        Adresse: ${nearestVgs.feature?.properties?.besoksadresse_adressenavn ?? "?"}, ${nearestVgs.feature?.properties?.besoksadresse_poststed ?? ""}<br>
+        Antall elever: ${nearestVgs.feature?.properties?.antallelever ?? "?"}<br>
+        Antall ansatte: ${nearestVgs.feature?.properties?.antallansatte ?? "?"}
       `
       : `
         <b>Nærmeste videregående skole</b><br>
@@ -906,7 +904,7 @@ async function runSpatialAnalysis(latlng) {
         features: (withinRows || []).map((r) => ({
           type: "Feature",
           properties: {
-            lokalId: r.lokalid,
+            lokalid: r.lokalid,
             romnr: r.romnr,
             plasser: r.plasser,
             adresse: r.adresse,
