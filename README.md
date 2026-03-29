@@ -4,12 +4,6 @@ Gruppe 2: Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karolin
 For denne oppgaven har vi valgt å opprette hver vår løsning slik at vi alle kan lære de ulike stegene i prosessen, lære av hverandre og forbedre våre egne versjoner og forståelser. Etter å ha presentert våre ulike løsninger for hverandre i et gruppemøte, ble vi enige om en felles besvarelse. Dette er grunnen til at ikke alle gruppemedlemmer nødvendigvis står som contributor i dette prosjektet. Vi har alle gjort jobben.
 
 
-Gruppe 2: 
-Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karoline Aas-Mehren, Milana Dubkova.
-
-For denne oppgaven har vi valgt å opprette hver vår løsning slik at vi alle kan lære de ulike stegene i prosessen, lære av hverandre og forbedre våre egne versjoner og forståelser. Etter å ha presentert våre ulike løsninger for hverandre i et gruppemøte, ble vi enige om en felles besvarelse. Dette er grunnen til at ikke alle gruppemedlemmer nødvendigvis står som contributor i dette prosjektet. Vi har alle gjort jobben.
-
-
 # Webutvikling, GIS og kartografi – Analyse av skoleberedskap i Norge
 
 ## TLDR
