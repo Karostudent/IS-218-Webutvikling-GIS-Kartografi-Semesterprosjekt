@@ -405,8 +405,9 @@ Analysen har flere begrensninger:
 git clone <repo-url>
 cd <repo-mappe>
 
-2. Kontroller konfigurasjon
-Prosjektet bruker Supabase for de dynamiske romlige spørringene. Kontroller at config.js inneholder gyldig URL og nøkkel.
+2. Konfigurer Supabase-tilkobling
+Prosjektet bruker Supabase for de dynamiske romlige spørringene.
+Før du kjører applikasjonen må du legge til en fil "config.js" i prosjektet, som inneholder gyldig URL og nøkkel. Dette oppgis i Canvas-innleveringen for Oppgave 2. 
 Eksempel:
 window.APP_CONFIG = {
  SUPABASE_URL: "DIN_SUPABASE_URL",
@@ -422,7 +423,7 @@ For å kjøre rasteranalysen:
 - lagre filen som:  
   data/dem_agder_merged_hillshade.tif  
 
-Notebooken vil da fungere som forventet.
+Notebooken er avhengig av akkurat dette filnavnet og plasseringen.
 
 4. Start lokal server
 Det holder å bruke en enkel lokal webserver, for eksempel:
@@ -430,10 +431,14 @@ npx live-server
 eller:
 python -m http.server 8080
 
-5. Åpne kartet i nettleser
-Åpne index.html via den lokale serveren.
+5. Åpne webkartet
+Åpne nettleseren og gå til:
+http://localhost:8080
 
-6. Åpne notebooken
+Deretter åpner du:
+index.html
+
+6. Kjør Jupyter Notebook
 Start Jupyter og åpne:
 jupyter notebook
 Deretter åpner du Notebook_Oppgave2.ipynb.
