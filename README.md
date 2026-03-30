@@ -1,5 +1,5 @@
 # IS-218 - Semesterprosjekt for Gruppe 2
-Gruppe 2: Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Karoline Aas-Mehren, Milana Dubkova.
+Gruppe 2: Oskar Kirkbride, Elise Fjeldstad, Emma Wolden, Helle Aanonsen, Milana Dubkova, og Karoline Aas-Mehren.
 
 For denne oppgaven har vi valgt å først opprette hver vår løsning slik at vi alle kan lære de ulike stegene i prosessen, lære av hverandre og forbedre våre egne versjoner og forståelser. Etter å ha presentert våre ulike løsninger for hverandre i et gruppemøte, ble vi enige om en felles besvarelse. Dette er grunnen til at ikke alle gruppemedlemmer nødvendigvis står som contributor i dette prosjektet. Vi har alle gjort jobben.
 
