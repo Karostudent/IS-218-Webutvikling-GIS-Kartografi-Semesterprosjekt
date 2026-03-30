@@ -438,10 +438,10 @@ http://localhost:8080
 Deretter åpner du:
 index.html
 
-6. Kjør Jupyter Notebook
-Start Jupyter og åpne:
-jupyter notebook
-Deretter åpner du Notebook_Oppgave2.ipynb.
+6. Kjør Notebook
+- Åpne prosjektmappen i VS Code
+- Finn Notebook_Oppgave2.ipynb
+- Klikk på den
 
 
 ## Resultatfiler
